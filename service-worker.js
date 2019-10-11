@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/guess-their-age-arg/precache-manifest.26761cb46dfce580cd70c5f7f8b11144.js"
+  "/guess-their-age-arg/precache-manifest.cd9e551f16fbe45a9adc793787cc17d9.js"
 );
 
 self.addEventListener('message', (event) => {
