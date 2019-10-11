@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/guess-their-age-arg/static/css/main.b100e6da.chunk.css",
+    "main.js": "/guess-their-age-arg/static/js/main.0b79b101.chunk.js",
+    "main.js.map": "/guess-their-age-arg/static/js/main.0b79b101.chunk.js.map",
+    "runtime-main.js": "/guess-their-age-arg/static/js/runtime-main.ff3d6234.js",
+    "runtime-main.js.map": "/guess-their-age-arg/static/js/runtime-main.ff3d6234.js.map",
+    "static/js/2.ae5c7139.chunk.js": "/guess-their-age-arg/static/js/2.ae5c7139.chunk.js",
+    "static/js/2.ae5c7139.chunk.js.map": "/guess-their-age-arg/static/js/2.ae5c7139.chunk.js.map",
+    "index.html": "/guess-their-age-arg/index.html",
+    "precache-manifest.b418a31422fe2df621ba1523e8abc038.js": "/guess-their-age-arg/precache-manifest.b418a31422fe2df621ba1523e8abc038.js",
+    "service-worker.js": "/guess-their-age-arg/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/guess-their-age-arg/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/guess-their-age-arg/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ff3d6234.js",
+    "static/js/2.ae5c7139.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.0b79b101.chunk.js"
+  ]
+}
