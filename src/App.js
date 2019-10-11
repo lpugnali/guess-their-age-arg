@@ -11,7 +11,8 @@ function App() {
     image: "",
     nacimiento: "",
     age: 0,
-    realAge: null
+    realAge: null,
+    first:true
   };
   const [person, setPerson] = useState(initialState);
   const initialLoad = ()=>{
@@ -55,6 +56,7 @@ function App() {
   }
 
   const loadItem = () => {
+    setPerson({...person,first:false});
     initialLoad();
   }
 
@@ -70,6 +72,7 @@ function App() {
     <div className="App">
       <div>
         <div style={{width:'100%'}}>
+        <button style={{ display: (person.first) ? "inline" : "none" }} onClick={loadItem}>{`Play`}</button>
         <img style={{width:'100%'}} src={person.image} alt=""/>
         </div>
         <div style={{width: '100%',
@@ -77,12 +80,13 @@ function App() {
     float: 'left',
     backgroundColor: '#8080806b',
     bottom: '0',
-    padding: '10px'}}>
-        <button style={{display: (person.name == "" && person.realAge == null) || person.realAge != null  ? "inline" : "none"}} onClick={loadItem}>{`${person.realAge != null ? "Volver a" : ""} Jugar`}</button>
+    padding: '10px',
+          display: (person.name == "") ? "none" : "block"}}>
+        <button style={{display: (person.name == "" && person.realAge == null) || person.realAge != null  ? "inline" : "none"}} onClick={loadItem}>Play Again</button>
         <h3>{person.name}</h3>
         <input type="number" value={person.age} onChange={handleChange}/>
-        <button onClick={validate}>Probar</button>
-        <h2 style={{display: person.realAge == null?"none" : "block"}}>{person.realAge == person.age ? "CORRECTO" : `INCORRECTO, tiene ${person.realAge}`}</h2>
+        <button style={{display: person.realAge == null ? "inline" : "none"}} onClick={validate}>Try</button>
+        <h2 style={{display: person.realAge == null?"none" : "block"}}>{person.realAge == person.age ? "CORRECT" : `INCORRECT, he/she is ${person.realAge}`}</h2>
       </div>
       </div>
     </div>
