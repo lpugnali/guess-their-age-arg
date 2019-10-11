@@ -10,7 +10,7 @@ function App() {
     name: "",
     image: "",
     nacimiento: "",
-    age: null,
+    age: 0,
     realAge: null,
     first:true
   };
